@@ -1,3 +1,12 @@
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 :root {
   /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);
@@ -609,31 +618,47 @@ select.form-control {
 
 /* Container layout */
 .container {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--space-16);
-  padding-left: var(--space-16);
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
   .container {
-    max-width: var(--container-sm);
+      max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
   }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: var(--container-md);
+      max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
   }
 }
 @media (min-width: 1024px) {
   .container {
-    max-width: var(--container-lg);
+      max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: var(--container-xl);
+      max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
   }
 }
 
@@ -888,12 +913,12 @@ body {
 /* Particles Background */
 #particles-js {
   position: fixed;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   z-index: -1;
-  opacity: 0.6;
+  pointer-events: none;
 }
 
 /* Container */
@@ -1076,11 +1101,12 @@ body {
 
 .hero-background {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: transparent;
 }
 
 .hero-overlay {
@@ -2692,7 +2718,11 @@ section {
 
 @media (max-width: 480px) {
   .container {
-    padding: 0 15px;
+      max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
   }
   
   .glass-card {
