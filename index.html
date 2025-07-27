@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Vinod - SAP CPI Integration Expert | Modern Portfolio 2025</title>
+    <meta name="description" content="Transforming Business Through Seamless Cloud Integration - 5+ Years SAP CPI Experience">
+    <meta name="keywords" content="SAP CPI, Integration Expert, Cloud Integration, S/4HANA, BTP, Freelancer">
+    <meta name="author" content="Vinod">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vinod - SAP CPI Integration Expert">
+    <meta property="og:description" content="Transforming Business Through Seamless Cloud Integration">
+    <meta property="og:type" content="website">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="custom-cursor"></div>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <span class="brand-text">Vinod</span>
+                </a>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="nav-menu" id="nav-menu" role="menubar">
+                <a href="#home" class="nav-link active" role="menuitem">Home</a>
+                <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#experience" class="nav-link" role="menuitem">Experience</a>
+                <a href="#skills" class="nav-link" role="menuitem">Skills</a>
+                <a href="#projects" class="nav-link" role="menuitem">Projects</a>
+                <a href="#services" class="nav-link" role="menuitem">Services</a>
+                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
+                
+                <!-- Social Links in Navigation -->
+                <div class="nav-social">
+                  <a href="https://linkedin.com/in/vinod-sap-cpi" target="_blank" rel="noopener noreferrer" class="footer-social-link linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/+919238600117" target="_blank" class="footer-social-link whatsapp" aria-label="WhatsApp Contact">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:acharyvinod52@gmail.com" class="footer-social-link email" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                </div>
+            </div>
+            
+            <!-- Mobile Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+<section id="home" class="hero-section" role="banner">
+  <div class="hero-background">
+      <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-container">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+          <div class="hero-avatar" data-aos="zoom-in" data-aos-delay="200">
+              <div class="avatar-ring"></div>
+              <img src="Passport-photo.png" alt="Vinod Achary Photo" class="avatar-image">
+              <div class="avatar-status">
+                  <i class="fas fa-check-circle"></i>
+              </div>
+          </div>
+
+          <h1 class="hero-title">
+              <span class="title-line">Hi, I'm</span>
+              <span class="title-name">Vinod</span>
+          </h1>
+          <h2 class="hero-subtitle">SAP CPI Integration Expert</h2>
+          <p class="hero-description">Transforming Business Through Seamless Cloud Integration</p>
+
+          <!-- Animated Skills -->
+          <div class="hero-skills">
+              <span>I specialize in </span>
+              <span class="typed-text" id="typed-skills"></span>
+          </div>
+
+          <!-- Updated Social Links -->
+          <div class="hero-social" data-aos="fade-up" data-aos-delay="250">
+              <a href="https://www.linkedin.com/in/vinod-achary/" target="_blank" rel="noopener noreferrer" class="hero-social-link linkedin" aria-label="Connect on LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+              </a>
+              <a href="https://wa.me/+919238600117" target="_blank" rel="noopener noreferrer" class="hero-social-link whatsapp" aria-label="Chat on WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp</span>
+              </a>
+              <a href="mailto:acharyvinod52@gmail.com" class="hero-social-link email" aria-label="Send Email">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+              </a>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons">
+              <a href="#projects" class="cta-btn primary-btn" role="button">
+                  <span>View Projects</span>
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="#contact" class="cta-btn secondary-btn" role="button">
+                  <span>Hire Me Now</span>
+                  <i class="fas fa-user-plus" aria-hidden="true"></i>
+              </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+              <div class="stat-item">
+                  <span class="stat-number" data-count="27">0</span>
+                  <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                  <span class="stat-number" data-count="100">0</span>
+                  <span class="stat-label">Success Rate</span>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                  <span class="stat-number" data-count="3">0</span>
+                  <span class="stat-label">Years Exp</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Floating Tech Icons (unchanged) -->
+      <div class="floating-icons" aria-hidden="true">
+          <div class="tech-icon" data-aos="zoom-in" data-aos-delay="500">
+              <i class="fas fa-cloud"></i>
+          </div>
+          <div class="tech-icon" data-aos="zoom-in" data-aos-delay="700">
+              <i class="fas fa-database"></i>
+          </div>
+          <div class="tech-icon" data-aos="zoom-in" data-aos-delay="900">
+              <i class="fas fa-link"></i>
+          </div>
+          <div class="tech-icon" data-aos="zoom-in" data-aos-delay="1100">
+              <i class="fas fa-server"></i>
+          </div>
+      </div>
+  </div>
+</section>
+  
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="glass-card">
+                        <h3>Professional Background</h3>
+                        <p>Experienced SAP Cloud Platform Integration specialist with 3+ years of expertise in designing and implementing complex integration solutions(started working from my graduation itself). Currently working at a leading MNC, I specialize in bridging cloud and on-premise systems to drive digital transformation initiatives.</p>
+                        
+                        <div class="key-points">
+                            <div class="point-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>3+ Years of SAP CPI Experience</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Fortune 500 Client Projects</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Real-time Integration Specialist</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <span>Available for Freelance Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills" data-aos="fade-left">
+                    <div class="glass-card">
+                        <h3>Key Expertise</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>SAP CPI</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>Integration Patterns</span>
+                                    <span>97%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="97"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>API Management</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-bar">
+                                <div class="skill-info">
+                                    <span>S/4HANA Integration</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress">
+                                    <div class="skill-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">2020 - Present</div>
+                        <h3>SAP CPI Consultant</h3>
+                        <h4>Leading MNC</h4>
+                        <p>Leading complex integration projects, mentoring junior developers, and architecting scalable solutions for Fortune 500 clients. Responsible for CPI migrations, S4hana payroll and real-time data synchronization.</p>
+                        <div class="timeline-tags">
+                            <span>Team Leadership</span>
+                            <span>Architecture Design</span>
+                            <span>Client Management</span>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-date">2019 - 2020</div>
+                        <h3>SAP Integration Developer</h3>
+                        <h4>Tech Solutions Inc</h4>
+                        <p>Developed and maintained integration flows, performed PI/PO to CPI migrations, and implemented real-time data synchronization solutions for various industries.</p>
+                        <div class="timeline-tags">
+                            <span>iFlow Development</span>
+                            <span>Data Mapping</span>
+                            <span>Migration Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                        </div>
+                        <h3>SAP Technologies</h3>
+                        <div class="skill-progress-ring">
+                            <div class="progress-circle" data-percentage="95">
+                                <span class="progress-text">95%</span>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">SAP CPI</span>
+                            <span class="skill-tag">SAP BTP</span>
+                            <span class="skill-tag">S/4HANA</span>
+                            <span class="skill-tag">SuccessFactors</span>
+                            <span class="skill-tag">Ariba</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                        </div>
+                        <h3>Programming</h3>
+                        <div class="skill-progress-ring">
+                            <div class="progress-circle" data-percentage="90">
+                                <span class="progress-text">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">Groovy</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">XSLT</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-link" aria-hidden="true"></i>
+                        </div>
+                        <h3>Integration Patterns</h3>
+                        <div class="skill-progress-ring">
+                            <div class="progress-circle" data-percentage="92">
+                                <span class="progress-text">92%</span>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">Real-time Integration</span>
+                            <span class="skill-tag">API Management</span>
+                            <span class="skill-tag">EDI/B2B</span>
+                            <span class="skill-tag">Event-driven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Real-time Sync</span>
+                        </div>
+                    </div>
+                    <div class="project-number">01</div>
+                    <div class="project-content">
+                        <h3>Real-time Inventory Synchronization</h3>
+                        <p><strong>Challenge:</strong> Fortune 500 retail client needed real-time inventory updates across multiple systems</p>
+                        <p><strong>Solution:</strong> Developed high-performance CPI iFlows with advanced error handling and monitoring</p>
+                        <p><strong>Result:</strong> Processing 100K+ daily transactions with 35% improvement in inventory accuracy</p>
+                        <div class="project-tech">
+                            <span>SAP CPI</span>
+                            <span>OData</span>
+                            <span>REST APIs</span>
+                            <span>Groovy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>S/4HANA Migration</span>
+                        </div>
+                    </div>
+                    <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3>S/4HANA Migration Integration</h3>
+                        <p><strong>Challenge:</strong> Complex data migration across 15+ modules with zero downtime requirement</p>
+                        <p><strong>Solution:</strong> End-to-end integration architecture with phased migration approach</p>
+                        <p><strong>Result:</strong> Zero data loss with 30% faster processing than legacy system</p>
+                        <div class="project-tech">
+                            <span>SAP CPI</span>
+                            <span>XSLT</span>
+                            <span>JavaScript</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>HIPAA Compliance</span>
+                        </div>
+                    </div>
+                    <div class="project-number">03</div>
+                    <div class="project-content">
+                        <h3>Healthcare HIPAA Integration</h3>
+                        <p><strong>Challenge:</strong> Secure integration between SuccessFactors and external payroll systems</p>
+                        <p><strong>Solution:</strong> Implemented encrypted data exchange with comprehensive audit trails</p>
+                        <p><strong>Result:</strong> 100% HIPAA compliance with enhanced security protocols</p>
+                        <div class="project-tech">
+                            <span>SAP BTP</span>
+                            <span>Security</span>
+                            <span>Data Masking</span>
+                            <span>Encryption</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-link" aria-hidden="true"></i>
+                    </div>
+                    <h3>Integration Development</h3>
+                    <p>Custom iFlow development, data mapping, and transformation solutions for your business needs.</p>
+                    <div class="service-features">
+                        <span>✓ Custom iFlow Development</span>
+                        <span>✓ Data Mapping & Transformation</span>
+                        <span>✓ Error Handling & Monitoring</span>
+                    </div>
+                    <div class="service-price">Starting from $20/hour</div>
+                    <a href="#contact" class="service-btn">Get Started</a>
+                </div>
+                
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                    </div>
+                    <h3>Migration Services</h3>
+                    <p>PI/PO to CPI migration, legacy system modernization with zero downtime approach.</p>
+                    <div class="service-features">
+                        <span>✓ PI/PO to CPI Migration</span>
+                        <span>✓ Legacy System Modernization</span>
+                        <span>✓ Zero Downtime Approach</span>
+                    </div>
+                    <div class="service-price">Project-based pricing</div>
+                    <a href="#contact" class="service-btn">Get Quote</a>
+                </div>
+                
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h3>Consulting & Support</h3>
+                    <p>Architecture review, performance optimization, and 24/7 support for your integrations.</p>
+                    <div class="service-features">
+                        <span>✓ Architecture Review</span>
+                        <span>✓ Performance Optimization</span>
+                        <span>✓ 24/7 Production Support</span>
+                    </div>
+                    <div class="service-price">Retainer available</div>
+                    <a href="#contact" class="service-btn">Consult Now</a>
+                </div>
+                
+                <div class="service-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open" aria-hidden="true"></i>
+                    </div>
+                    <h3>Training & Knowledge Transfer</h3>
+                    <p>Team training, best practices documentation, and comprehensive knowledge transfer sessions.</p>
+                    <div class="service-features">
+                        <span>✓ Team Training Sessions</span>
+                        <span>✓ Best Practices Documentation</span>
+                        <span>✓ Knowledge Transfer</span>
+                    </div>
+                    <div class="service-price">Session-based pricing</div>
+                    <a href="#contact" class="service-btn">Book Session</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Client Testimonials</h2>
+                <p class="section-subtitle">What clients say about my work</p>
+            </div>
+            
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card glass-card active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        </div>
+                        <p>"Vinod delivered our critical S/4HANA integration project ahead of schedule with zero issues. His expertise in SAP CPI is exceptional."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Project Manager</h4>
+                            <span>Manufacturing Corp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card glass-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        </div>
+                        <p>"Outstanding technical skills and communication. Made complex integration concepts easy to understand for our business team."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>IT Director</h4>
+                            <span>Healthcare Provider</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" aria-label="Previous testimonial">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <div class="testimonial-dots">
+                    <button class="dot active" data-slide="0" aria-label="View testimonial 1"></button>
+                    <button class="dot" data-slide="1" aria-label="View testimonial 2"></button>
+                </div>
+                <button class="testimonial-next" aria-label="Next testimonial">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Ready to transform your business with seamless integrations?</p>
+            </div>
+            
+            <div class="contact-content">
+              <div class="contact-form-container" data-aos="fade-right">
+                <div class="glass-card">
+                  <form
+                    class="contact-form"
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    novalidate
+                  >
+                    <!-- Your Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="572d377e-fca7-4b02-bb6c-69087cbf9d6f">
+                    <!-- You can add: <input type="hidden" name="redirect" value="https://yourdomain.com/success.html"> -->
+                    
+                    <div class="form-row">
+                      <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error">
+                        <div class="error-message" id="name-error"></div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error">
+                        <div class="error-message" id="email-error"></div>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="project">Project Type</label>
+                      <select id="project" name="project"
+                        style="width:100%;padding:12px 16px;font-size:1rem;color:#f2f2f2;background:rgba(36,38,58,0.76);border:1px solid rgba(255,255,255,0.12);border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,0.02);appearance:none;outline:none;transition:border-color .2s,box-shadow .2s;background-image:url('data:image/svg+xml;utf8,<svg fill=\'white\' height=\'16\' viewBox=\'0 0 20 20\' width=\'16\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M7.293 7.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z\'/></svg>');background-repeat:no-repeat;background-position:right 1rem center;background-size:1.2em;">
+                        <option value="">Select a service</option>
+                        <option value="integration">Integration Development</option>
+                        <option value="migration">Migration Services</option>
+                        <option value="consulting">Consulting & Support</option>
+                        <option value="training">Training & Knowledge Transfer</option>
+                      </select>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="message">Project Details <span class="required">*</span></label>
+                      <textarea id="message" name="message" rows="5" required aria-describedby="message-error" placeholder="Tell me about your project requirements..."></textarea>
+                      <div class="error-message" id="message-error"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                      <span>Send Message</span>
+                      <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            
+            
+                
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="glass-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:acharyvinod52@gmail.com">acharyvinod52@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+91-9876543210">+91-9238600117</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>India (Remote Available)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Availability</h4>
+                                <p>Mon - Sat: 11:00 AM - 11:00 PM IST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-social">
+                            <a href="https://linkedin.com/in/vinod-sap-cpi" target="_blank" rel="noopener noreferrer" class="social-link linkedin" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:acharyvinod52@gmail.com" class="social-link email" aria-label="Send Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://wa.me/+919238600117" target="_blank" class="social-link whatsapp" aria-label="WhatsApp Contact">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Vinod</h3>
+                    <p>SAP CPI Integration Expert</p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/vinod-sap-cpi" target="_blank" rel="noopener noreferrer" class="footer-social-link linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/+919238600117" target="_blank" class="footer-social-link whatsapp" aria-label="WhatsApp Contact">
+                          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:acharyvinod52@gmail.com" class="footer-social-link email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <a href="#services">Integration Development</a>
+                        <a href="#services">Migration Services</a>
+                        <a href="#services">Consulting</a>
+                        <a href="#services">Training</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Vinod. All rights reserved.</p>
+                    <p>Made with ❤️ using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
